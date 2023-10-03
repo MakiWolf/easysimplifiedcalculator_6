@@ -437,7 +437,9 @@ namespace Rechner5
                         }
                         else
                         {
-                            erg = zahl1 + zahl2;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.add(zahl1, zahl2);
+
 
                             rechenzeichen1 = "++";
                             erg1 = Convert.ToDouble(eingabe.Text);
@@ -449,11 +451,13 @@ namespace Rechner5
                     case "++": //fuer nochmals die = Taste
                         if (prozentrechnen == "1") //wenn man Prozentrechnen will
                         {
-                            erg = erg1 + erg2;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.add(zahl1, zahl2);
                         }
                         else
                         {
-                            erg = erg1 + zahl2;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.add(zahl1, zahl2);
                             rechenzeichen1 = "++";
 
                         }
@@ -470,7 +474,8 @@ namespace Rechner5
                         }
                         else
                         {
-                            erg = zahl1 - zahl2;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.sub(zahl1, zahl2);
                             rechenzeichen1 = "--";
                             erg1 = Convert.ToDouble(eingabe.Text);
                         }
@@ -480,11 +485,13 @@ namespace Rechner5
                     case "--": //fuer nochmals die = Taste
                         if (prozentrechnen == "1") //wenn man Prozentrechnen will
                         {
-                            erg = erg1 - erg2;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.sub(zahl1, zahl2);
                         }
                         else
                         {
-                            erg = zahl2 -erg1;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.sub(zahl1, zahl2);
                             rechenzeichen1 = "--";
 
                         }
@@ -498,7 +505,8 @@ namespace Rechner5
                         }
                         else
                         {
-                            erg = zahl1 / zahl2;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.div(zahl1, zahl2);
                             rechenzeichen1 = "//";
                             erg1 = Convert.ToDouble(eingabe.Text);
                         }
@@ -512,7 +520,8 @@ namespace Rechner5
                         }
                         else
                         {
-                            erg = zahl2 / erg1;
+                            calculation_class calc = new calculation_class();
+                            erg = calc.div(zahl1, zahl2);
                             rechenzeichen1 = "//";
 
                         }
