@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "easysimplifiedcaculator6", "Rechner5\easysimplifiedcaculator6.csproj", "{2EDCF02E-F7EF-4879-8B85-EC6B0FCC8F77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{B6FCF958-A8F0-4A55-9957-C40A6282F127}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{2EDCF02E-F7EF-4879-8B85-EC6B0FCC8F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EDCF02E-F7EF-4879-8B85-EC6B0FCC8F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EDCF02E-F7EF-4879-8B85-EC6B0FCC8F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FCF958-A8F0-4A55-9957-C40A6282F127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FCF958-A8F0-4A55-9957-C40A6282F127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FCF958-A8F0-4A55-9957-C40A6282F127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FCF958-A8F0-4A55-9957-C40A6282F127}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2523574-7B85-464B-9D8B-18547365FB69}
 	EndGlobalSection
 EndGlobal
