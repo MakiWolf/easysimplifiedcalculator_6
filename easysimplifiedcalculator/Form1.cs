@@ -15,7 +15,7 @@ namespace easysimplifiedcalculator
 
         public double number1;
         public double number2;
-        public double nichts;
+        public double nothing;
         public double result;
         public double result1;
         public double result2;
@@ -30,20 +30,12 @@ namespace easysimplifiedcalculator
             InitializeComponent();
         }
 
-        private void MR_Click(object sender, EventArgs e)
-        {
-            nichts = 0;
-            percent = "0";
-            input.Text = "";
-            input.Text = input.Text;
-        }
-
         private void button0_Click(object sender, EventArgs e)
         {
             //die folgenden Buttons mit den Zahlen von 0 bis 9 dienen dazu um der Eingabe immer eine neue Zahl anzuhaengen
             input.Text = input.Text + "0";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 if (test == "1")
                 {
@@ -61,7 +53,7 @@ namespace easysimplifiedcalculator
         {
             input.Text = input.Text + "1";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 
                 if (test=="1") {
@@ -78,7 +70,7 @@ namespace easysimplifiedcalculator
         private void button2_Click(object sender, EventArgs e)
         {
             input.Text = input.Text + "2";
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 if (test == "1")
                 {
@@ -95,7 +87,7 @@ namespace easysimplifiedcalculator
         private void button3_Click(object sender, EventArgs e)
         {
             input.Text = input.Text + "3";
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 if (test == "1")
                 {
@@ -113,7 +105,7 @@ namespace easysimplifiedcalculator
         {
             input.Text = input.Text + "4";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 if (test == "1")
                 {
@@ -131,7 +123,7 @@ namespace easysimplifiedcalculator
         {
             input.Text = input.Text + "5";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 if (test == "1")
                 {
@@ -149,7 +141,7 @@ namespace easysimplifiedcalculator
         {
             input.Text = input.Text + "6";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
 
                 if (test == "1")
@@ -169,7 +161,7 @@ namespace easysimplifiedcalculator
         {
             input.Text = input.Text + "7";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
 
                 if (test == "1")
@@ -188,7 +180,7 @@ namespace easysimplifiedcalculator
         {
             input.Text = input.Text + "8";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 if (test == "1")
                 {
@@ -206,7 +198,7 @@ namespace easysimplifiedcalculator
         {
             input.Text = input.Text + "9";
 
-            if (nichts == 1)
+            if (nothing == 1)
             {
                 if (test == "1")
                 {
@@ -225,30 +217,28 @@ namespace easysimplifiedcalculator
             
             try
             {
-                //rechenzeichen1 = "Prozent";
                 percent = "1";
                 number2 = Convert.ToDouble(input.Text);
-                
-                //eingabe.Text = "";
-                //test11 = "1";
-               // eingabe.Text = Convert.ToString(zahl1 / 100 * zahl2);
             }
             catch
             {
                 input.Text = "Falsche Eingabe!";
             }
 
-
-            //eingabe.Text = eingabe.Text + "%";
-            // 200/100*20
         }
 
         private void durch_Click(object sender, EventArgs e)
         {
-            double durch = Convert.ToDouble( input.Text);
-            //um das was in der Eingabe steht zu dividieren also 1 / das was in der Textbox steht
-            input.Text = Convert.ToString( 1 / (durch));
-            nichts = 1;            
+            try
+            {
+                double durch = Convert.ToDouble(input.Text);
+                //um das was in der Eingabe steht zu dividieren also 1 / das was in der Textbox steht
+                input.Text = Convert.ToString(1 / (durch));
+                nothing = 1;
+            }
+            catch {
+                input.Text = "Falsche Eingabe!";
+            }
         }
 
         private void komma_Click(object sender, EventArgs e)
@@ -340,7 +330,7 @@ namespace easysimplifiedcalculator
             {
                 char1 = "sin";
                 number2 = Convert.ToDouble(input.Text);
-                //eingabe.Text = "";
+                
             }
             catch
             {
@@ -354,7 +344,7 @@ namespace easysimplifiedcalculator
             {
                 char1 = "cos";
                 number2 = Convert.ToDouble(input.Text);
-                // eingabe.Text = "";
+               
             }
             catch
             {
@@ -368,7 +358,7 @@ namespace easysimplifiedcalculator
             {
                 char1 = "tan";
                 number2 = Convert.ToDouble(input.Text);
-                //eingabe.Text = "";
+                
             }
             catch
             {
@@ -380,7 +370,7 @@ namespace easysimplifiedcalculator
             try { 
                 char1 = "sqrt";
                 number1 = Convert.ToDouble(input.Text);
-                //eingabe.Text = "";
+                
                 }
             catch
                 {
@@ -393,7 +383,7 @@ namespace easysimplifiedcalculator
             try { 
                 char1 = "sqr";
                 number1 = Convert.ToDouble(input.Text);
-                // eingabe.Text = "";
+                
                 }
             catch
                 {
@@ -430,7 +420,7 @@ namespace easysimplifiedcalculator
                         {
                             result = number1 + (number1 / 100 * zahl2);
                             char1 = "++";
-                            //prozentrechnen = "1";
+                            
                             result1 = Convert.ToDouble(input.Text);
                             result2 = (number1 / 100 * zahl2);
 
@@ -445,7 +435,7 @@ namespace easysimplifiedcalculator
                             result1 = Convert.ToDouble(input.Text);
 
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "++": //fuer nochmals die = Taste
@@ -461,7 +451,7 @@ namespace easysimplifiedcalculator
                             char1 = "++";
 
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
 
@@ -479,7 +469,7 @@ namespace easysimplifiedcalculator
                             char1 = "--";
                             result1 = Convert.ToDouble(input.Text);
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "--": //fuer nochmals die = Taste
@@ -495,7 +485,7 @@ namespace easysimplifiedcalculator
                             char1 = "--";
 
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "/":                      
@@ -510,7 +500,7 @@ namespace easysimplifiedcalculator
                             char1 = "//";
                             result1 = Convert.ToDouble(input.Text);
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "//": //fuer nochmals die = Taste
@@ -525,7 +515,7 @@ namespace easysimplifiedcalculator
                             char1 = "//";
 
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "*":                        
@@ -541,7 +531,7 @@ namespace easysimplifiedcalculator
                             result1 = Convert.ToDouble(input.Text);
 
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "**": //fuer nochmals die = Taste
@@ -555,7 +545,7 @@ namespace easysimplifiedcalculator
                             char1 = "**";
 
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     //Winkelfunktionen
@@ -566,7 +556,7 @@ namespace easysimplifiedcalculator
                         {
                             result = Convert.ToDouble("Falsche Eingabe");
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "cos":
@@ -576,7 +566,7 @@ namespace easysimplifiedcalculator
                         {
                             result = Convert.ToDouble("Falsche Eingabe");
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "tan":
@@ -586,17 +576,17 @@ namespace easysimplifiedcalculator
                         {
                             result = Convert.ToDouble("Falsche Eingabe");
                         }
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "sqrt":
                         result = Math.Sqrt(number1);
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     case "sqr":
                         result = number1 *number1;
-                        nichts = 1;
+                        nothing = 1;
                         break;
 
                     //case "Prozent":
@@ -644,6 +634,14 @@ namespace easysimplifiedcalculator
             if (input.Text.Length > 0) {
                 input.Text = input.Text.Substring(0, input.Text.Length - 1);
             }
+        }
+
+        private void C_Click(object sender, EventArgs e)
+        {
+            nothing = 0;
+            percent = "0";
+            input.Text = "";
+            input.Text = input.Text;
         }
     }
     }

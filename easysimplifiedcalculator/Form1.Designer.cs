@@ -52,7 +52,7 @@
             this.cos = new System.Windows.Forms.Button();
             this.tan = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
-            this.MR = new System.Windows.Forms.Button();
+            this.C = new System.Windows.Forms.Button();
             this.prozent = new System.Windows.Forms.Button();
             this.durch = new System.Windows.Forms.Button();
             this.sqr = new System.Windows.Forms.Button();
@@ -324,16 +324,16 @@
             this.sqrt.UseVisualStyleBackColor = true;
             this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
             // 
-            // MR
+            // C
             // 
-            this.MR.Location = new System.Drawing.Point(32, 98);
-            this.MR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MR.Name = "MR";
-            this.MR.Size = new System.Drawing.Size(52, 35);
-            this.MR.TabIndex = 29;
-            this.MR.Text = "C";
-            this.MR.UseVisualStyleBackColor = true;
-            this.MR.Click += new System.EventHandler(this.MR_Click);
+            this.C.Location = new System.Drawing.Point(32, 98);
+            this.C.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.C.Name = "C";
+            this.C.Size = new System.Drawing.Size(52, 35);
+            this.C.TabIndex = 29;
+            this.C.Text = "C";
+            this.C.UseVisualStyleBackColor = true;
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // prozent
             // 
@@ -388,7 +388,7 @@
             this.Controls.Add(this.sqr);
             this.Controls.Add(this.durch);
             this.Controls.Add(this.prozent);
-            this.Controls.Add(this.MR);
+            this.Controls.Add(this.C);
             this.Controls.Add(this.sqrt);
             this.Controls.Add(this.tan);
             this.Controls.Add(this.cos);
@@ -447,7 +447,7 @@
         private System.Windows.Forms.Button cos;
         private System.Windows.Forms.Button tan;
         private System.Windows.Forms.Button sqrt;
-        private System.Windows.Forms.Button MR;
+        private System.Windows.Forms.Button C;
         private System.Windows.Forms.Button prozent;
         private System.Windows.Forms.Button durch;
         private System.Windows.Forms.Button sqr;
