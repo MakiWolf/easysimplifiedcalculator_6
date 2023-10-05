@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Rechner5
+namespace easysimplifiedcalculator
 {
     public partial class Form1 : Form
     {

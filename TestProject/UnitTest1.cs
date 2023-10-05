@@ -1,4 +1,4 @@
-using Rechner5;
+using easysimplifiedcalculator;
 using System;
 using NUnit.Framework;
 

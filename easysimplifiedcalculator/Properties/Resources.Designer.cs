@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Rechner5.Properties {
+namespace easysimplifiedcalculator.Properties {
     using System;
     
     

@@ -1,4 +1,4 @@
-﻿namespace Rechner5
+﻿namespace easysimplifiedcalculator
 {
     partial class Form1
     {

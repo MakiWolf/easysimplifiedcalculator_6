@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rechner5
+namespace easysimplifiedcalculator
 {
     public class calculation_class
     {

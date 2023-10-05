@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Rechner5
+namespace easysimplifiedcalculator
 {
     static class Program
     {
