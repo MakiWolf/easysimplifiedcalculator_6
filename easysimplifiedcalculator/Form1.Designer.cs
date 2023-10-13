@@ -37,7 +37,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.Ueberschrift = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
             this.button0 = new System.Windows.Forms.Button();
             this.plus = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             this.input = new System.Windows.Forms.TextBox();
             this.multiply = new System.Windows.Forms.Button();
             this.divide = new System.Windows.Forms.Button();
-            this.komma = new System.Windows.Forms.Button();
+            this.comma = new System.Windows.Forms.Button();
             this.minusTaste = new System.Windows.Forms.Button();
             this.pi = new System.Windows.Forms.Button();
             this.sin = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.tan = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
             this.C = new System.Windows.Forms.Button();
-            this.prozent = new System.Windows.Forms.Button();
+            this.percentbutton = new System.Windows.Forms.Button();
             this.durch = new System.Windows.Forms.Button();
             this.sqr = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
@@ -158,16 +158,16 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // Ueberschrift
+            // title
             // 
-            this.Ueberschrift.AutoSize = true;
-            this.Ueberschrift.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ueberschrift.Location = new System.Drawing.Point(35, 9);
-            this.Ueberschrift.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Ueberschrift.Name = "Ueberschrift";
-            this.Ueberschrift.Size = new System.Drawing.Size(351, 33);
-            this.Ueberschrift.TabIndex = 9;
-            this.Ueberschrift.Text = "easysimplifiedcalculator";
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(35, 9);
+            this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(351, 33);
+            this.title.TabIndex = 9;
+            this.title.Text = "easysimplifiedcalculator";
             // 
             // button0
             // 
@@ -247,16 +247,16 @@
             this.divide.UseVisualStyleBackColor = true;
             this.divide.Click += new System.EventHandler(this.dividieren_Click);
             // 
-            // komma
+            // comma
             // 
-            this.komma.Location = new System.Drawing.Point(78, 378);
-            this.komma.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.komma.Name = "komma";
-            this.komma.Size = new System.Drawing.Size(68, 35);
-            this.komma.TabIndex = 22;
-            this.komma.Text = ",";
-            this.komma.UseVisualStyleBackColor = true;
-            this.komma.Click += new System.EventHandler(this.komma_Click);
+            this.comma.Location = new System.Drawing.Point(78, 378);
+            this.comma.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comma.Name = "comma";
+            this.comma.Size = new System.Drawing.Size(68, 35);
+            this.comma.TabIndex = 22;
+            this.comma.Text = ",";
+            this.comma.UseVisualStyleBackColor = true;
+            this.comma.Click += new System.EventHandler(this.komma_Click);
             // 
             // minusTaste
             // 
@@ -335,16 +335,16 @@
             this.C.UseVisualStyleBackColor = true;
             this.C.Click += new System.EventHandler(this.C_Click);
             // 
-            // prozent
+            // percentbutton
             // 
-            this.prozent.Location = new System.Drawing.Point(338, 482);
-            this.prozent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.prozent.Name = "prozent";
-            this.prozent.Size = new System.Drawing.Size(68, 35);
-            this.prozent.TabIndex = 30;
-            this.prozent.Text = "%";
-            this.prozent.UseVisualStyleBackColor = true;
-            this.prozent.Click += new System.EventHandler(this.prozent_Click);
+            this.percentbutton.Location = new System.Drawing.Point(338, 482);
+            this.percentbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.percentbutton.Name = "percentbutton";
+            this.percentbutton.Size = new System.Drawing.Size(68, 35);
+            this.percentbutton.TabIndex = 30;
+            this.percentbutton.Text = "%";
+            this.percentbutton.UseVisualStyleBackColor = true;
+            this.percentbutton.Click += new System.EventHandler(this.prozent_Click);
             // 
             // durch
             // 
@@ -387,7 +387,7 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.sqr);
             this.Controls.Add(this.durch);
-            this.Controls.Add(this.prozent);
+            this.Controls.Add(this.percentbutton);
             this.Controls.Add(this.C);
             this.Controls.Add(this.sqrt);
             this.Controls.Add(this.tan);
@@ -395,7 +395,7 @@
             this.Controls.Add(this.sin);
             this.Controls.Add(this.pi);
             this.Controls.Add(this.minusTaste);
-            this.Controls.Add(this.komma);
+            this.Controls.Add(this.comma);
             this.Controls.Add(this.divide);
             this.Controls.Add(this.multiply);
             this.Controls.Add(this.input);
@@ -403,7 +403,7 @@
             this.Controls.Add(this.minus);
             this.Controls.Add(this.plus);
             this.Controls.Add(this.button0);
-            this.Controls.Add(this.Ueberschrift);
+            this.Controls.Add(this.title);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -432,7 +432,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label Ueberschrift;
+        private System.Windows.Forms.Label title;
         private System.Windows.Forms.Button button0;
         private System.Windows.Forms.Button plus;
         private System.Windows.Forms.Button minus;
@@ -440,7 +440,7 @@
         private System.Windows.Forms.TextBox input;
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button divide;
-        private System.Windows.Forms.Button komma;
+        private System.Windows.Forms.Button comma;
         private System.Windows.Forms.Button minusTaste;
         private System.Windows.Forms.Button pi;
         private System.Windows.Forms.Button sin;
@@ -448,7 +448,7 @@
         private System.Windows.Forms.Button tan;
         private System.Windows.Forms.Button sqrt;
         private System.Windows.Forms.Button C;
-        private System.Windows.Forms.Button prozent;
+        private System.Windows.Forms.Button percentbutton;
         private System.Windows.Forms.Button durch;
         private System.Windows.Forms.Button sqr;
         private System.Windows.Forms.Button back;
