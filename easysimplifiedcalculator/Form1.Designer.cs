@@ -212,7 +212,7 @@
             this.calculate.TabIndex = 13;
             this.calculate.Text = "=";
             this.calculate.UseVisualStyleBackColor = true;
-            this.calculate.Click += new System.EventHandler(this.berechnen_Click);
+            this.calculate.Click += new System.EventHandler(this.calculate_Click);
             // 
             // input
             // 
@@ -222,7 +222,6 @@
             this.input.Name = "input";
             this.input.Size = new System.Drawing.Size(354, 35);
             this.input.TabIndex = 14;
-            this.input.TextChanged += new System.EventHandler(this.eingabe_TextChanged);
             // 
             // multiply
             // 
@@ -256,18 +255,18 @@
             this.comma.TabIndex = 22;
             this.comma.Text = ",";
             this.comma.UseVisualStyleBackColor = true;
-            this.comma.Click += new System.EventHandler(this.komma_Click);
+            this.comma.Click += new System.EventHandler(this.comma_Click);
             // 
             // minusTaste
             // 
             this.minusTaste.Location = new System.Drawing.Point(201, 378);
             this.minusTaste.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.minusTaste.Name = "minusTaste";
+            this.minusTaste.Name = "minusbutton";
             this.minusTaste.Size = new System.Drawing.Size(68, 35);
             this.minusTaste.TabIndex = 23;
             this.minusTaste.Text = "-";
             this.minusTaste.UseVisualStyleBackColor = true;
-            this.minusTaste.Click += new System.EventHandler(this.minusTaste_Click);
+            this.minusTaste.Click += new System.EventHandler(this.minusbutton_Click);
             // 
             // pi
             // 
@@ -344,7 +343,7 @@
             this.percentbutton.TabIndex = 30;
             this.percentbutton.Text = "%";
             this.percentbutton.UseVisualStyleBackColor = true;
-            this.percentbutton.Click += new System.EventHandler(this.prozent_Click);
+            this.percentbutton.Click += new System.EventHandler(this.percentbutton_Click);
             // 
             // durch
             // 

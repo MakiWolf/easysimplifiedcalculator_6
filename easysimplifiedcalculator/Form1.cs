@@ -212,7 +212,7 @@ namespace easysimplifiedcalculator
             }
         }
 
-        private void prozent_Click(object sender, EventArgs e)
+        private void percentbutton_Click(object sender, EventArgs e)
         {
             
             try
@@ -241,13 +241,13 @@ namespace easysimplifiedcalculator
             }
         }
 
-        private void komma_Click(object sender, EventArgs e)
+        private void comma_Click(object sender, EventArgs e)
         {
             // um der Eingabe ein Komma hinzuzufuegen
             input.Text = input.Text + ",";
         }
 
-        private void minusTaste_Click(object sender, EventArgs e)
+        private void minusbutton_Click(object sender, EventArgs e)
         {
             // um vor der Eingabe ein minus hinzuzufuegen
             input.Text = "-" + input.Text;
@@ -391,7 +391,7 @@ namespace easysimplifiedcalculator
                 }
         }
 
-        private void berechnen_Click(object sender, EventArgs e)
+        private void calculate_Click(object sender, EventArgs e)
         {
 
             try
@@ -607,26 +607,6 @@ namespace easysimplifiedcalculator
                 input.Text = "Falsche Eingabe!"; 
 
             }            
-        }
-
-        private void eingabe2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ErgebnisText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ergebnis_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void eingabe_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void back_Click(object sender, EventArgs e)
