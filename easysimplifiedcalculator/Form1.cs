@@ -32,7 +32,7 @@ namespace easysimplifiedcalculator
 
         private void button0_Click(object sender, EventArgs e)
         {
-            //die folgenden Buttons mit den Zahlen von 0 bis 9 dienen dazu um der Eingabe immer eine neue Zahl anzuhaengen
+           
             input.Text = input.Text + "0";
 
             if (nothing == 1)
@@ -243,13 +243,11 @@ namespace easysimplifiedcalculator
 
         private void comma_Click(object sender, EventArgs e)
         {
-            // um der Eingabe ein Komma hinzuzufuegen
             input.Text = input.Text + ",";
         }
 
         private void minusbutton_Click(object sender, EventArgs e)
         {
-            // um vor der Eingabe ein minus hinzuzufuegen
             input.Text = "-" + input.Text;
         }
 
@@ -416,7 +414,7 @@ namespace easysimplifiedcalculator
 
                 {
                     case "+":                        
-                        if (percent == "1") //wenn man Prozentrechnen will
+                        if (percent == "1")
                         {
                             result = number1 + (number1 / 100 * zahl2);
                             char1 = "++";
@@ -439,7 +437,7 @@ namespace easysimplifiedcalculator
                         break;
 
                     case "++": //fuer nochmals die = Taste
-                        if (percent == "1") //wenn man Prozentrechnen will
+                        if (percent == "1")
                         {
                             calculation_class calc = new calculation_class();
                             result = calc.add(number1, zahl2);
@@ -473,7 +471,7 @@ namespace easysimplifiedcalculator
                         break;
 
                     case "--": //fuer nochmals die = Taste
-                        if (percent == "1") //wenn man Prozentrechnen will
+                        if (percent == "1")
                         {
                             calculation_class calc = new calculation_class();
                             result = calc.sub(number1, zahl2);
@@ -504,7 +502,7 @@ namespace easysimplifiedcalculator
                         break;
 
                     case "//": //fuer nochmals die = Taste
-                        if (percent == "1") //wenn man Prozentrechnen will
+                        if (percent == "1")
                         {
                             result = result1 - result2;
                         }
@@ -535,7 +533,7 @@ namespace easysimplifiedcalculator
                         break;
 
                     case "**": //fuer nochmals die = Taste
-                        if (percent == "1") //wenn man Prozentrechnen will
+                        if (percent == "1")
                         {
                             result = result1 - result2;
                         }

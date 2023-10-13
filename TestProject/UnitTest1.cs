@@ -9,11 +9,11 @@ namespace TestProject
     public class Tests
     {
         [TestCase]
-        public void Test2()
+        public void Testadd()
         {
-            calculation_class a = new calculation_class();
-            double b = a.add(1, 8);
-            Assert.AreEqual(b, 9.0);
+            calculation_class calc = new calculation_class();
+            double result = calc.add(1, 8);
+            Assert.AreEqual(result, 9.0);
 
         }
     }
