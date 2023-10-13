@@ -234,7 +234,7 @@
             this.multiply.TabIndex = 18;
             this.multiply.Text = "*";
             this.multiply.UseVisualStyleBackColor = true;
-            this.multiply.Click += new System.EventHandler(this.multiplizieren_Click);
+            this.multiply.Click += new System.EventHandler(this.multiply_Click);
             // 
             // divide
             // 
@@ -245,7 +245,7 @@
             this.divide.TabIndex = 19;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
-            this.divide.Click += new System.EventHandler(this.dividieren_Click);
+            this.divide.Click += new System.EventHandler(this.divide_Click);
             // 
             // comma
             // 

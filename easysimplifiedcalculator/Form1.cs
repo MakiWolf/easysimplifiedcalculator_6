@@ -292,7 +292,7 @@ namespace easysimplifiedcalculator
                 }
         }
 
-        private void multiplizieren_Click(object sender, EventArgs e)
+        private void multiply_Click(object sender, EventArgs e)
         {
             try
             {
@@ -303,22 +303,22 @@ namespace easysimplifiedcalculator
             }
             catch
             {
-                input.Text = "Zwei Rechenzeichen!"; 
+                input.Text = "Zwei Rechenzeichen!";
 
             }
         }
 
-        private void dividieren_Click(object sender, EventArgs e)
+        private void divide_Click(object sender, EventArgs e)
         {
             try
             {
                 char1 = "/";
                 number1 = Convert.ToDouble(input.Text);
                 input.Text = "";
-               }
+            }
             catch
             {
-                input.Text = "Zwei Rechenzeichen!"; 
+                input.Text = "Zwei Rechenzeichen!";
             }
         }
 
