@@ -46,7 +46,7 @@
             this.multiply = new System.Windows.Forms.Button();
             this.divide = new System.Windows.Forms.Button();
             this.comma = new System.Windows.Forms.Button();
-            this.minusTaste = new System.Windows.Forms.Button();
+            this.minusbutton = new System.Windows.Forms.Button();
             this.pi = new System.Windows.Forms.Button();
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
@@ -257,16 +257,16 @@
             this.comma.UseVisualStyleBackColor = true;
             this.comma.Click += new System.EventHandler(this.comma_Click);
             // 
-            // minusTaste
+            // minusbutton
             // 
-            this.minusTaste.Location = new System.Drawing.Point(201, 378);
-            this.minusTaste.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.minusTaste.Name = "minusTaste";
-            this.minusTaste.Size = new System.Drawing.Size(68, 35);
-            this.minusTaste.TabIndex = 23;
-            this.minusTaste.Text = "-";
-            this.minusTaste.UseVisualStyleBackColor = true;
-            this.minusTaste.Click += new System.EventHandler(this.minusbutton_Click);
+            this.minusbutton.Location = new System.Drawing.Point(201, 378);
+            this.minusbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.minusbutton.Name = "minusbutton";
+            this.minusbutton.Size = new System.Drawing.Size(68, 35);
+            this.minusbutton.TabIndex = 23;
+            this.minusbutton.Text = "-";
+            this.minusbutton.UseVisualStyleBackColor = true;
+            this.minusbutton.Click += new System.EventHandler(this.minusbutton_Click);
             // 
             // pi
             // 
@@ -393,7 +393,7 @@
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
             this.Controls.Add(this.pi);
-            this.Controls.Add(this.minusTaste);
+            this.Controls.Add(this.minusbutton);
             this.Controls.Add(this.comma);
             this.Controls.Add(this.divide);
             this.Controls.Add(this.multiply);
@@ -440,7 +440,7 @@
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button divide;
         private System.Windows.Forms.Button comma;
-        private System.Windows.Forms.Button minusTaste;
+        private System.Windows.Forms.Button minusbutton;
         private System.Windows.Forms.Button pi;
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button cos;
