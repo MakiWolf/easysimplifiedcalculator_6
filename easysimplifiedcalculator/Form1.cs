@@ -227,13 +227,13 @@ namespace easysimplifiedcalculator
 
         }
 
-        private void durch_Click(object sender, EventArgs e)
+        private void divide1_Click(object sender, EventArgs e)
         {
             try
             {
-                double durch = Convert.ToDouble(input.Text);
+                double divide1 = Convert.ToDouble(input.Text);
                 //um das was in der Eingabe steht zu dividieren also 1 / das was in der Textbox steht
-                input.Text = Convert.ToString(1 / (durch));
+                input.Text = Convert.ToString(1 / (divide1));
                 nothing = 1;
             }
             catch {
@@ -256,10 +256,6 @@ namespace easysimplifiedcalculator
             //um in die Eingabe die Zahl pi einzusetzen
             input.Text = Convert.ToString(Math.PI);
         }
-
-        //Rechenzeichen.Text wird fuer den Switch spaeter benoetigt
-        //eingabe2.Text dient dazu den Text in das obere Feld einzutragen und dann wieder in das untere Feled keinen Text einzutragen
-
         private void plus_Click(object sender, EventArgs e)
         {
             try
@@ -394,9 +390,6 @@ namespace easysimplifiedcalculator
 
             try
             {
-
-                // string rechenzeichen1 = Convert.ToString(rechenzeichen.Text);
-                //  double zahl1 = Convert.ToDouble(eingabe2.Text);
 
                 double zahl2 = Convert.ToDouble(input.Text);
                 if (percent == "1")
@@ -587,13 +580,8 @@ namespace easysimplifiedcalculator
                         nothing = 1;
                         break;
 
-                    //case "Prozent":
-                    //    erg = zahl1 -(zahl1 / 100 * zahl2);
-                    //    nichts = 1;
-                    //    break;
-
                     default:
-                        input.Text = "Das Rechenzeichen ist in diesem Rechner unbekannt!";
+                        input.Text = "no char!";
                         break;
                         
                 }

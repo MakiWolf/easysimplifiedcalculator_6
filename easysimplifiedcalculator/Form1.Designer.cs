@@ -54,7 +54,7 @@
             this.sqrt = new System.Windows.Forms.Button();
             this.C = new System.Windows.Forms.Button();
             this.percentbutton = new System.Windows.Forms.Button();
-            this.durch = new System.Windows.Forms.Button();
+            this.divide1 = new System.Windows.Forms.Button();
             this.sqr = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -261,7 +261,7 @@
             // 
             this.minusTaste.Location = new System.Drawing.Point(201, 378);
             this.minusTaste.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.minusTaste.Name = "minusbutton";
+            this.minusTaste.Name = "minusTaste";
             this.minusTaste.Size = new System.Drawing.Size(68, 35);
             this.minusTaste.TabIndex = 23;
             this.minusTaste.Text = "-";
@@ -345,16 +345,16 @@
             this.percentbutton.UseVisualStyleBackColor = true;
             this.percentbutton.Click += new System.EventHandler(this.percentbutton_Click);
             // 
-            // durch
+            // divide1
             // 
-            this.durch.Location = new System.Drawing.Point(338, 526);
-            this.durch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.durch.Name = "durch";
-            this.durch.Size = new System.Drawing.Size(68, 35);
-            this.durch.TabIndex = 31;
-            this.durch.Text = "1/x";
-            this.durch.UseVisualStyleBackColor = true;
-            this.durch.Click += new System.EventHandler(this.durch_Click);
+            this.divide1.Location = new System.Drawing.Point(338, 526);
+            this.divide1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.divide1.Name = "divide1";
+            this.divide1.Size = new System.Drawing.Size(68, 35);
+            this.divide1.TabIndex = 31;
+            this.divide1.Text = "1/x";
+            this.divide1.UseVisualStyleBackColor = true;
+            this.divide1.Click += new System.EventHandler(this.divide1_Click);
             // 
             // sqr
             // 
@@ -385,7 +385,7 @@
             this.ClientSize = new System.Drawing.Size(426, 595);
             this.Controls.Add(this.back);
             this.Controls.Add(this.sqr);
-            this.Controls.Add(this.durch);
+            this.Controls.Add(this.divide1);
             this.Controls.Add(this.percentbutton);
             this.Controls.Add(this.C);
             this.Controls.Add(this.sqrt);
@@ -448,7 +448,7 @@
         private System.Windows.Forms.Button sqrt;
         private System.Windows.Forms.Button C;
         private System.Windows.Forms.Button percentbutton;
-        private System.Windows.Forms.Button durch;
+        private System.Windows.Forms.Button divide1;
         private System.Windows.Forms.Button sqr;
         private System.Windows.Forms.Button back;
     }
