@@ -7,7 +7,7 @@ This is a basic calculator script written in C# with unit tests.
 
 === Windows with Visual Studio ===
 
-Open sln with Visual Studio and you are done!
+Open .sln file with Visual Studio and you are done!
 
 === Windows without Visual Studio ===
 
