@@ -22,10 +22,9 @@ namespace easysimplifiedcalculator
             InitializeComponent();
         }
 
-        private void button0_Click(object sender, EventArgs e)
+        private void inputtext(string number)
         {
-
-            input.Text = input.Text + "0";
+            input.Text = input.Text + number;
 
             if (nothing == 1)
             {
@@ -39,170 +38,56 @@ namespace easysimplifiedcalculator
                     resetinput = "1";
                 }
             }
+        }
+
+        private void button0_Click(object sender, EventArgs e)
+        {
+            inputtext("0");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "1";
-
-            if (nothing == 1)
-            {
-
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("1");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "2";
-            if (nothing == 1)
-            {
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("2");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "3";
-            if (nothing == 1)
-            {
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("3");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "4";
-
-            if (nothing == 1)
-            {
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("4");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "5";
-
-            if (nothing == 1)
-            {
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("5");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "6";
-
-            if (nothing == 1)
-            {
-
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
-
+            inputtext("6");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "7";
-
-            if (nothing == 1)
-            {
-
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("7");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "8";
-
-            if (nothing == 1)
-            {
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("8");
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            input.Text = input.Text + "9";
-
-            if (nothing == 1)
-            {
-                if (resetinput == "1")
-                {
-                    input.Text = input.Text;
-                }
-                else
-                {
-                    input.Text = "";
-                    resetinput = "1";
-                }
-            }
+            inputtext("9");
         }
 
         private void percentbutton_Click(object sender, EventArgs e)
